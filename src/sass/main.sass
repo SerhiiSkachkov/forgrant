@@ -1,0 +1,350 @@
+@import "set/normalize.scss"
+/*// @import "set/fonts.scss"
+// @import "set/bootstrap-grid.min.scss"*/
+
+html
+	display: block
+	width: 100%
+	height: 100% 
+
+
+body 
+	display: block
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	color: white 
+
+
+* 
+	box-sizing: border-box
+	outline: none 
+
+
+img 
+	max-width: 100%
+	height: auto 
+
+
+.hide 
+	display: none 
+
+.price-fall 
+	color: #c80e24 
+
+
+.coin 
+	padding-top: 70px;
+	background: url(../img/main.jpg) center top no-repeat/cover
+	padding-bottom: 140px 
+
+
+.coin-header 
+	margin-bottom: 50px;
+	border: 1px solid rgba(128, 202, 222, 0.360784)
+	border-radius: 7px
+	background: rgba(255, 255, 255, 0.06) 
+
+
+.coin-header h1
+	font-size: 32px
+	font-weight: 600
+	margin: 30px 0px
+	text-align: center 
+
+.coin-select
+	width: 289px
+	margin: 0 auto
+	height: 55px
+	margin-bottom: 30px
+	margin-left: -1px 
+
+
+.cusel 
+	position: relative
+	z-index: 1
+	display: block
+	width: 100%!important
+	height: 56px
+	font-size: 14px
+	border: 1px solid #92e8fe
+	border-radius: 5px
+	background: #1f272f
+	vertical-align: middle
+	cursor: pointer 
+
+
+.cusel:before 
+	content: ''
+	display: block
+	position: absolute
+	right: 14px
+	width: 7px
+	height: 7px
+	top: 20px
+	border-right: 1px solid #92e8fe
+	border-bottom: 1px solid #92e8fe
+	transform: rotate(45deg)
+
+
+/* Текст в селекте */
+.cuselText 
+	position: absolute
+	top: 11px
+	left: 0px
+	z-index: 1
+	height: 30px
+	padding: 0 5px 0 15px
+	font-size: 16px
+	line-height: 30px
+	color: white
+	cursor: pointer
+	overflow: hidden 
+
+
+* html .cuselText 
+	height: 30px 
+
+
+/* Оформление пунктов списка */
+.cusel span 
+	display: block
+	padding: 5px 15px
+	font-size: 14px
+	color: white
+	zoom: 1
+	cursor: pointer
+	white-space: nowrap
+	background: #1f272f !important 
+
+
+/* Оформление пунктов списка при наведении*/
+.cusel span:hover,
+.cusel .cuselOptHover 
+	color: #92e8fe 
+
+
+/* Оформление активного пункта списка  */
+.cusel .cuselActive,
+.cusel .cuselActive:hover 
+	background: #1f272f 
+
+
+/* Оформление селекта при наведении и клике */
+.cusel:hover,
+.cusel:focus,
+.cuselFocus 
+	background: #1f272f
+
+
+/* Оформление стрелки при наведении и клике */
+/* видимость выпадающего списка */
+.cuselOpen 
+	z-index: 999 
+
+
+/* Оформление селекта и стрелки disabled */
+.classDisCusel,
+.classDisCusel .cuselFrameRight 
+	cursor: default
+	color: #ccc 
+
+
+/* Оформление текста в селекте когда он disabled */
+.classDisCusel .cuselText 
+	cursor: default
+	color: #ccc 
+
+
+/* Оформление выпадающего списка */
+.cusel .cusel-scroll-wrap 
+	position: absolute
+	left: 0
+	top: 100%
+	display: block
+	min-width: 100%
+	width: auto
+	height: auto !important
+	visibility: hidden
+	margin-top: 9px
+	padding: 5px 0
+	border: 1px solid #92e8fe
+	background: #1f272f
+	overflow: hidden
+	border-radius: 4px
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) 
+
+
+.cusel .jScrollPaneContainer 
+	position: relative
+	z-index: 5
+	overflow: hidden
+	background: #fff 
+
+
+.cusel-scroll-pane 
+	top: 5px
+	right: 3px
+	left: 0
+	width: auto !important
+	background: #1f272f 
+
+
+.coin-item 
+	text-align: center
+	max-width: 308px
+	margin: 0 auto
+	margin-bottom: 10px
+	border-radius: 10px
+	padding: 5px 25px 5px 34px 
+
+
+.coin-item h2 
+	text-align: center
+	font-size: 22px
+	margin-bottom: 144px 
+
+
+.coin-item-box div 
+	margin-bottom: 13px 
+
+
+.coin-item-box div 
+	text-align: left
+	font-weight: 700
+	font-size: 20px 
+
+
+.coin-item-box div > span 
+	float: right 
+
+
+.coin-item--ltc 
+	background: url(../img/ltcn.png) center top no-repeat/cover 
+
+
+.coin-item--eth 
+	background: url(../img/ethn.png) center top no-repeat/cover 
+
+
+.coin-item--btc 
+	background: url(../img/btcn.png) center top no-repeat/cover 
+
+.coin-lbl 
+	display: block
+	text-align: left
+	font-weight: bold
+	position: relative
+	font-size: 14px 
+
+.coin-lbl:hover
+	cursor: pointer 
+
+
+.coin-lbl:before 
+	content: ''
+	display: block
+	width: 25px
+	height: 25px
+	right: 0px
+	top: -3px
+	background: url(../img/check.png) center top no-repeat/contain
+	border-radius: 20px
+	position: absolute
+	z-index: 15 
+
+
+.coin-lbl:after 
+	content: ''
+	display: block
+	width: 40px
+	height: 18px
+	position: absolute
+	right: 0px
+	top: 0px
+	background-color: lightgray
+	border-radius: 20px
+	box-shadow: inset 0px 16px 22px -14px rgba(0, 0, 0, 0.75) 
+
+
+ul li span 
+	color: #70c446
+	font-weight: 900 
+
+input[type='checkbox']:checked + label:before 
+	right: 20px 
+
+
+input[type='checkbox']:checked + label:after 
+	background-color: #3dafe9 
+
+
+input[type='checkbox']:checked + .coin-change-list-percent 
+	display: block !important 
+
+
+.coin-item ul 
+	list-style-type: none
+	padding-left: 0
+	margin-top: 10px 
+
+
+.coin-item ul > li 
+	font-size: 14px
+	text-align: left
+	line-height: 1.5
+	color: rgba(211, 211, 209, 0.39) 
+
+
+.coin-item li span 
+	float: right
+	font-weight: bold
+
+
+.container 
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+
+@media (min-width: 576px) 
+	.container 
+		max-width: 540px  
+
+
+@media (min-width: 768px) 
+	.container 
+		max-width: 720px 
+
+	.coin-header 
+		position: relative 
+
+	.coin-select 
+		width: 297px
+		margin: 0 auto 30px
+		margin-left: auto !important  
+
+
+@media (min-width: 992px) 
+	.container 
+		max-width: 1010px 
+
+	.coin-box 
+		display: flex;
+		justify-content: space-between; 
+
+	.coin-item 
+		width: 308px
+		margin: 0px 
+	.coin-item--btc 
+		margin-right: 0px 
+
+	.coin-select 
+		position: absolute;
+		right: 20px
+		top: 21px 
+
+	.coin-header h1 
+		margin-left: 130px
+		text-align: left 
+
+
+

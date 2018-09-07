@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="icon" href="" type="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>new</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/cusel-min-2.5.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </head>
+  <body>
+    <section class="coin">
+      <div class="container">
+        <div class="coin-header">
+          <h1>Select currency to exhange:</h1>
+          <div class="coin-select"><select class='select' id ="currency-list" name="currency">
+<option id="tag_1" value="USD">USD</option>
+<option id="tag_2" value="EUR">EUR</option>
+<option id="tag_3" value="RUB">RUB</option>
+</select>
+          </div>
+        </div>
+        <div class="coin-box">
+          <div class="coin-item coin-item--eth">
+            <h2>Ethereum</h2>
+            <div class="coin-item-box">
+              <input class="hide" id="eth" type="checkbox">
+              <label class="coin-lbl" for="eth">Percent change</label>
+              <ul class="coin-change-list coin-change-list-price" data="ETH"></ul>
+              <ul class="coin-change-list coin-change-list-percent hide" data="ETH-percent"></ul>
+            </div>
+          </div>
+          <div class="coin-item coin-item--ltc">
+            <h2>Litecoin</h2>
+            <div class="coin-item-box">
+              <input class="hide" id="ltc" type="checkbox">
+              <label class="coin-lbl" for="ltc">Percent change</label>
+              <ul class="coin-change-list coin-change-list-price" data="LTC"></ul>
+              <ul class="coin-change-list coin-change-list-percent hide" data="LTC-percent"></ul>
+            </div>
+          </div>
+          <div class="coin-item coin-item--btc">
+            <h2>Bitcoin</h2>
+            <div class="coin-item-box">
+              <input class="hide" id="btc" type="checkbox">
+              <label class="coin-lbl" for="btc">Percent change</label>
+              <ul class="coin-change-list coin-change-list-price" data="BTC">    </ul>
+              <ul class="coin-change-list coin-change-list-percent hide" data="BTC-percent"> </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

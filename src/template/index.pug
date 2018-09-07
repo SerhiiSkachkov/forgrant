@@ -1,0 +1,62 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(rel='icon' href='' type='')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+        script(src="js/cusel-min-2.5.js")
+        script(src='js/scripts.min.js')
+
+    body
+      section.coin
+        .container
+          .coin-header
+              h1 Select currency to exhange:
+              .coin-select
+                <select class='select' id ="currency-list" name="currency">
+         
+                    <option id="tag_1" value="USD">USD</option>
+             
+                    <option id="tag_2" value="EUR">EUR</option>
+             
+                    <option id="tag_3" value="RUB">RUB</option>
+                </select>
+
+          .coin-box
+            
+            .coin-item.coin-item--eth
+                h2 Ethereum
+                .coin-item-box
+                  input#eth.hide(type="checkbox")
+                  label.coin-lbl(for='eth') Percent change
+                  ul.coin-change-list.coin-change-list-price(data="ETH")
+                  ul.coin-change-list.coin-change-list-percent.hide(data="ETH-percent")
+
+            .coin-item.coin-item--ltc
+                h2 Litecoin
+                .coin-item-box
+                  input#ltc.hide(type="checkbox")
+                  label.coin-lbl(for='ltc') Percent change
+                  ul.coin-change-list.coin-change-list-price(data="LTC")
+                  ul.coin-change-list.coin-change-list-percent.hide(data="LTC-percent")
+      
+            .coin-item.coin-item--btc
+                h2 Bitcoin
+                .coin-item-box
+                  input#btc.hide(type="checkbox")
+                  label.coin-lbl(for='btc') Percent change
+                  ul.coin-change-list.coin-change-list-price(data="BTC")     
+                  ul.coin-change-list.coin-change-list-percent.hide(data="BTC-percent") 
+
+
+        
+      //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+      
+      //- script(src='js/scripts.min.js')
